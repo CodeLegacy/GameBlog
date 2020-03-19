@@ -1,0 +1,87 @@
+body{
+    background-color:black;
+}
+
+
+#landing-header {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    padding-top: 40vh;
+}
+
+#landing-header h1 {
+    color: #fff;
+}
+
+
+.slideshow {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.slideshow li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 50s linear infinite;
+}
+
+.slideshow li:nth-child(1) {
+    background-image: url(https://images4.alphacoders.com/291/291136.jpg)
+}
+
+.slideshow li:nth-child(2) {
+    background-image: url(https://www.wsupercars.com/wallpapers/Toyota/2018-Toyota-GR-Supra-Racing-Concept-V3-1080.jpg);
+    animation-delay: 10s;
+}
+
+.slideshow li:nth-child(3) {
+    background-image: url(http://http://s1.picswalls.com/wallpapers/2014/09/18/latest-battlefield-4-wallpaper_112236759_217.jpg.imgur.com/emvhOnb.jpg);
+    animation-delay: 20s;
+}
+
+.slideshow li:nth-child(4) {
+    background-image: url(http://i.https://www.wallpaperup.com/uploads/wallpapers/2015/05/08/681808/87459ae72859e6b19f0d5a74615e4284.jpg.com/2LSMCmJ.jpg);
+    animation-delay: 30s;
+}
+
+.slideshow li:nth-child(5) {
+    background-image: url(http://i.imgur.com/TVGe0Ef.jpg);
+    animation-delay: 40s;
+}
+
+@keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+
+    10% {
+        opacity: 1;
+        animation-timing-function: ease-out;
+    }
+
+    20% {
+        opacity: 1
+    }
+
+    30% {
+        opacity: 0
+    }
+}
